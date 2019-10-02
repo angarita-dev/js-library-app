@@ -16,6 +16,7 @@ function addBookToLibrary() {
   let newBook = new Book(title, author, numPages, read);
   myLibrary.push(newBook);
   render();
+  document.getElementsByClassName("input")[0].style.display = "none"; 
   alert(newBook.title + " was added successfully !!!");
 }
 
@@ -37,4 +38,8 @@ function render(){
                                                  </div>
                                                 </div>`;}); 
   document.getElementById("library").innerHTML = bookList;
+}
+
+function newBook(){
+  document.getElementsByClassName("input")[0].style.display = "block";
 }
