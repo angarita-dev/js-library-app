@@ -8,7 +8,27 @@
   <title>Library App</title>
 </head>
 <body>
+  <table class="input">
+    <tr>
+      <th>Title</th>
+      <th>Author</th>
+      <th>Number of Pages</th>
+      <th>Read Status</th>
+      <th>&nbsp;</th>
+    </tr>
+    <tr>
+      <td><input type="text" name="title" id="title" placeholder="Enter book title"></td>
+      <td><input type="text" name="author" id="author" placeholder="Enter book author"></td>
+      <td><input type="number" name="numPages" id="numPages" placeholder="Enter the number of pages"></td>
+      <td><select name="read" id="read">
+          <option>Read</option>
+          <option>Currently reading</option>
+          <option>Not read</option>
+          </select>
+      </td>
+      <td><input type="button" value="Add book" onclick="addBookToLibrary()" /></td>
+    </tr>
+  </table>
   <script src=".\js\script.js"></script>
-
 </body>
 </html> 
