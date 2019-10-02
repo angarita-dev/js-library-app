@@ -43,3 +43,8 @@ function render(){
 function newBook(){
   document.getElementsByClassName("input")[0].style.display = "block";
 }
+
+function removeBook(bookIndex){
+  myLibrary.splice(bookIndex,1);
+  render();
+}
