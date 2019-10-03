@@ -79,19 +79,19 @@ input, select {
   font-weight: bold;
 }
 
-.heading{
-  text-align: center;
-  width: 800px;
-  margin:0 auto;
+.heading{ 
   background: black;
+  border-radius: 3px;
   color:white;
   font-weight: 500;
+  margin:0 auto;
   padding: 2px 0;
-  border-radius: 3px;
+  text-align: center;
+  width: 800px;
 }
 
 .heading p{
-  font-style: italic;
   color:purple;
+  font-style: italic;
   text-decoration-color: white;
 }
