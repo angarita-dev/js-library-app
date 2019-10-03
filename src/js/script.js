@@ -17,7 +17,7 @@ function addBookToLibrary() {
   myLibrary.push(newBook);
   render();
   document.getElementsByClassName("input")[0].style.display = "none"; 
-  alert(newBook.title + " was added successfully !!!");
+  document.getElementById("message").innerHTML = newBook.title + " was added successfully !!!";
 }
 
 function render(){
