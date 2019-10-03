@@ -73,7 +73,7 @@ body{
   width: 20%;
 } 
 
-#message{
+.message{
   color: rgb(73, 178, 32);
   font-weight: bold;
 }
