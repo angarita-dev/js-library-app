@@ -1,3 +1,8 @@
+body{
+  margin: 0 auto;
+  width: 1200px;
+}
+
 button {
   border: 1px solid rgb(90,90,90);
   padding: 0 5px;
@@ -22,11 +27,7 @@ input, select {
   display:none;
 }
 
-body{
-  margin: 0 auto;
-  padding-top:50px;
-  width: 1200px;
-}
+
 
 .book{
   background-color: lightblue;
@@ -76,4 +77,21 @@ body{
 .message{
   color: rgb(73, 178, 32);
   font-weight: bold;
+}
+
+.heading{
+  text-align: center;
+  width: 800px;
+  margin:0 auto;
+  background: black;
+  color:white;
+  font-weight: 500;
+  padding: 2px 0;
+  border-radius: 3px;
+}
+
+.heading p{
+  font-style: italic;
+  color:purple;
+  text-decoration-color: white;
 }
