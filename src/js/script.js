@@ -21,6 +21,7 @@ function addBookToLibrary() {
   myLibrary.push(newBook);
   render();
   document.getElementsByClassName("input")[0].style.display = "none"; 
+  document.getElementById("message").style.display = "block";
   document.getElementById("message").innerHTML = newBook.title + " was added successfully !!!";
 }
 
@@ -46,6 +47,7 @@ function render(){
 
 function newBook(){
   document.getElementsByClassName("input")[0].style.display = "block";
+  document.getElementById("message").style.display = "none";
 }
 
 function removeBook(bookIndex){

@@ -1,6 +1,8 @@
 linters:
   csslint:
     ignore: 'box-model'
+  eslint:
+    config: './eslint.config'
 files:
   ignore:
     - 'bower_components/*'
