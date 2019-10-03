@@ -6,14 +6,18 @@ function Book(title, author, numPages, read) {
   this.numPages = numPages;
   this.read = read;
 }
-
-function addBookToLibrary() {
+function getBookData(){
   let title = document.querySelector("#title").value;
   let author = document.querySelector("#author").value;
   let numPages = document.querySelector("#numPages").value;
   let read = document.querySelector("#read").value;
 
   let newBook = new Book(title, author, numPages, read);
+  return newBook;
+}
+
+function addBookToLibrary() {
+  let newBook = getBookData();
   myLibrary.push(newBook);
   render();
   document.getElementsByClassName("input")[0].style.display = "none"; 
